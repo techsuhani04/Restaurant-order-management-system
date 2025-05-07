@@ -1,0 +1,111 @@
+/*====BOOKING====*/
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background: linear-gradient(to bottom, #d3c3d5, #c37e8d, rgb(125, 71, 122));
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding-bottom: 80px;
+  backdrop-filter: brightness(0.9);
+}
+
+.card {
+  background-color: #f0f0f0; /* Card background color */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Equal padding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  width: 400px; /* Card width */
+  text-align: center; /* Center align text */
+}
+
+form {
+  display: flex;
+  flex-direction: column; /* Stack input fields vertically */
+}
+
+label {
+  margin-top: 5px; /* Space between label and input */
+}
+
+/* Ensure all input fields and textarea have the same width */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+textarea {
+    width: 100%;          /* Set width to 100% */
+    padding: 10px;       /* Add some padding for better appearance */
+    box-sizing: border-box; /* Include padding in width calculation */
+    margin-bottom: 10px; /* Add spacing between fields */
+}
+
+/* Optional: Style the overall form */
+form {
+    max-width: 400px;    /* Optional: Set a max width for the form */
+    margin: auto;        /* Center the form on the page */
+    background: white;   /* Optional: Background color */
+    padding: 20px;       /* Optional: Padding around form elements */
+    border-radius: 10px; /* Optional: Add some border radius */
+} 
+
+input, 
+textarea {
+  padding: 18px; /* Equal padding for inputs */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  margin-top: 5px; /* Space between input and field */
+}
+
+/* Button styling */
+.book-btn {
+  background-color: #080406; /* Color for the button */
+  color: white;               /* Text color */
+  padding: 10px 20px;         /* Padding for the button */
+  border: none;               /* No border */
+  border-radius: 5px;        /* Rounded corners */
+  cursor: pointer;            /* Pointer cursor */
+  font-size: 16px;           /* Font size */
+}
+
+/* Hover effect */
+.book-btn:hover {
+  background-color: #891838; /* Different color on hover */
+}
+
+
+/* === Admin Dashboard Table Styling === 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  background: #fff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #ffebe0;
+  color: #333;
+}
+
+tr:nth-child(even) {
+  background-color: #fff7f3;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-top: 40px;
+}
+*/
+/* Gradient background for home */

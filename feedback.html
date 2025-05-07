@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Feedback</title>
+  <link rel="stylesheet" href="feedback.css">
+</head>
+<body class="form-page">
+  <div class="form-container" >
+  <h2>We Value Your Feedback</h2>
+  <form action="submit-feedback.php" method="POST">
+    <label>Name:</label><br>
+    <input type="text" name="name" required placeholder="Enter your name"><br><br>
+
+    <label>Rating (1 to 5):</label><br>
+    <select name="rating" required>
+      <option value="">Select Rating</option>
+      <option value="1">1 - Poor</option>
+      <option value="2">2 - Fair</option>
+      <option value="3">3 - Good</option>
+      <option value="4">4 - Very Good</option>
+      <option value="5">5 - Excellent</option>
+    </select><br><br>
+
+    <label>Comments:</label><br>
+    <textarea name="comments" rows="3" required placeholder="Write what you felt about our place."></textarea><br><br>
+
+    <button type="submit" class="button">Submit Feedback</button>
+  </form>
+ </div>
+</body>
+</html>
+

@@ -1,0 +1,71 @@
+/* === INDEX.HTML (Welcome Page) === */
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;         /* centers horizontally */
+    align-items: center;             /* centers vertically */
+    background: url('./images/restaurant.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .container {
+    background: rgba(0, 0, 0, 0.6);  /* dark overlay background */
+    padding: 50px 40px;              /* internal spacing */
+    border-radius: 20px;             /* rounded corners */
+    max-width: 600px;
+    width: 90%;
+    margin: auto;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* subtle drop shadow */
+  }
+  
+  .container h1 {
+    font-size: 2.6rem;
+    color: #a95339;
+  }
+  
+  .container p {
+    font-size: 1.2rem;
+    color: #eee;
+  }
+  
+  .btn {
+    background: linear-gradient(to right, #a0557d, #490932); /* stylish button gradient */
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+  }
+  
+  .btn:hover {
+    background: linear-gradient(to right, #96d1a8, #177017);
+    transform: translateY(-2px);
+  }
+  
+  /* === HOME.HTML (Menu Navigation Options Page) === */
+  .home-options {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #c8b897, #3b1361);
+    color: #333;
+  }
+  
+  .home-options .container {
+    background-color: #fff;
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+  }
+  
+  

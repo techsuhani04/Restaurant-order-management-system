@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Place Order</title>
+  <link rel="stylesheet" href="order.css">
+</head>
+<body class="menu-page menu-bg">
+
+  <div class="cart-section" style="text-align:center;">
+    <h2>Restaurant Menu</h2>
+  </div>
+
+  <form action="order.php" method="POST" onsubmit="return prepareOrder()">
+
+    <div class="menu-container">
+
+      <div class="menu-row">
+        <div class="menu-item">
+          <img src="images/pizza.jpg" alt="Pizza">
+          <h3>Margherita Pizza</h3>
+          <p>₹250</p>
+          <button type="button" onclick="addToCart('Margherita Pizza', 250)">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/salad.jpg" alt="Salad">
+          <h3>Caesar Salad</h3>
+          <p>₹180</p>
+          <button type="button" onclick="addToCart('Caesar Salad', 180)">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/pasta.jpg" alt="Pasta">
+          <h3>White Sauce Pasta</h3>
+          <p>₹220</p>
+          <button type="button" onclick="addToCart('White Sauce Pasta', 220)">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/sandwich.jpg" alt="Sandwich">
+          <h3>Veg Grilled Sandwich</h3>
+          <p>₹110</p>
+          <button type="button" onclick="addToCart('Veg Grilled Sandwich', 90)">Add to Cart</button>
+         </div>
+
+         <div class="menu-item">
+          <img src="images/friedrice.jpg" alt="friedrice">
+          <h3>Fried Rice</h3>
+          <p>₹120</p>
+          <button type="button" onclick="addToCart('Fried Rice', 90)">Add to Cart</button>
+         </div>
+      </div>
+
+      <div class="menu-row">
+        <div class="menu-item">
+          <img src="images/paneer.jpg" alt="Paneer">
+          <h3>Paneer Tikka</h3>
+          <p>₹330</p>
+          <button type="button" onclick="addToCart('Paneer Tikka', 330)">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/burger.jpg" alt="Burger">
+          <h3>Cheese Burger</h3>
+          <p>₹200</p>
+          <button type="button" onclick="addToCart('Cheese Burger', 200)">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/momo.jpg" alt="Momos">
+          <h3>Veg Momos</h3>
+          <p>₹160</p>
+          <button type="button" onclick="addToCart('Veg Momos', 160)">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/soup.jpg" alt="Soup">
+          <h3>Tomato Soup</h3>
+          <p>₹90</p>
+          <button type="button" onclick="addToCart('Tomato Soup', 90)">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/waffle.jpg" alt="waffle">
+          <h3>Loaded Waffles</h3>
+          <p>₹110</p>
+          <button type="button" onclick="addToCart('Loaded Waffles', 90)">Add to Cart</button>
+         </div>
+       </div>
+
+      <div class="menu-row">
+        
+        <div class="menu-item">
+          <img src="images/cheesecake.jpg" alt="Cheesecake">
+          <h3>Blueberry Cheesecake</h3>
+          <p>₹250</p>
+          <button type="button" onclick="addToCart('Cheesecake', 90)">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/cappuccino.jpg" alt="Cappuccino">
+          <h3>Cappuccino</h3>
+          <p>₹90</p>
+          <button type="button" onclick="addToCart('Cappuccino', 90)">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/milkshake.jpg" alt="Milkshake">
+          <h3>Chocolate Milkshake</h3>
+          <p>₹120</p>
+          <button type="button" onclick="addToCart('Chocolate Milkshake', 90)">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/frap.jpg" alt="Frapuccino">
+          <h3>Frapuccino</h3>
+          <p>₹150</p>
+          <button type="button" onclick="addToCart('Frapuccino', 90)">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/ravioli.jpg" alt="Ravioli">
+          <h3>Mexican Ravioli Pasta</h3>
+          <p>₹220</p>
+          <button type="button" onclick="addToCart('Mexican Ravioli Pasta', 90)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="cart-section">
+      <h3>Your Cart 🛒</h3>
+      <ul id="cartList"></ul>
+      <p><strong>Total Quantity:</strong> <span id="cartQty">0</span></p>
+      <p><strong>Total Amount:</strong> ₹<span id="totalAmount">0</span></p>
+
+      <label for="customerNameField"><strong>Customer Name:</strong></label><br>
+      <input type="text" name="customer_name" id="customerNameField" required placeholder="Enter your name" style="padding:8px; width:250px;"><br><br>
+
+      <input type="hidden" name="items" id="itemsField">
+      <input type="hidden" name="total" id="totalField">
+      <input type="hidden" name="quantity" id="quantityField">
+
+      <button type="submit" class="order-btn">Place Order</button>
+    </div>
+
+  </form>
+
+  <script src="order.js"></script>
+</body>
+</html>
